@@ -5,6 +5,9 @@
 valor = float(input("Valor da compra: "))
 # decisão
 if valor >= 100:
-    valor = valor * 0.9
-# saída
-print("Valor final: R$", valor)
+    desconto = valor * 0.10
+    valor = valor - desconto
+    print("Valor final: R$", valor)
+else:
+    print("Valor final: R$", valor)
+
